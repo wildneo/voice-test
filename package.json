@@ -26,5 +26,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "annyang": "^2.6.1"
+  },
+  "main": "app.js"
 }
