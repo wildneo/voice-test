@@ -1,0 +1,30 @@
+{
+  "name": "voice-test",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babelify": "^10.0.0",
+    "browser-sync": "2.26.3",
+    "browserify": "^16.2.3",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "mkdirp": "^0.5.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

@@ -1,0 +1,7 @@
+node_modules/
+build/
+package-lock.json
+src/js/entry.js
+src/pug/mixins.pug
+src/scss/blocks.scss
+src/js/test.js

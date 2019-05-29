@@ -1,0 +1,20 @@
+@mixin for-size($range) {
+  $phone-boundary: 600px;
+  $tablet-portrait-boundary: 900px;
+  $tablet-landscape-boundary: 1300px;
+  $desktop-boundary: 1800px;
+
+  @if $range == phone {
+		@media (max-width: $phone-boundary) { @content; }
+  } @else if $range == tablet {
+		@media (max-width: $tablet-portrait-boundary) { @content; }
+	} @else if $range == tablet-landscape {
+		@media (max-width: $tablet-landscape-boundary) 
+      and (min-width: #{$tablet-portrait-boundary + 1}) {@content; }
+  } @else if $range == desktop {
+    @media (max-width: $desktop-boundary)
+      and (min-width: #{$tablet-landscape-boundary + 1}) { @content; }
+  } @else if $range == big-desktop {
+    @media (min-width: $desktop-boundary) { @content; }
+  }
+}

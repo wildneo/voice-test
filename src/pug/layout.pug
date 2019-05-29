@@ -1,0 +1,32 @@
+//- Стандартный шаблон страницы
+include mixins
+doctype html
+html(lang= 'en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- Edge и ряд мобильных браузеров слишком умны. Отключим это.
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='date=no')
+    meta(name='format-detection', content='address=no')
+    meta(name='format-detection', content='email=no')
+    meta(content='notranslate', name='google')
+    //- Фавиконки
+    link(rel='icon', type='image/ico', sizes='16x16', href='/img/favicon/favicon.ico')
+
+
+
+    block meta
+      title Home page
+
+    block head
+      link(rel='stylesheet', href='css/style.css')
+
+  body
+    noscript У вас отключен JavaScript. Это пугает.
+    script(async)
+    .content
+      block content
+
+    script(src='js/bundle.js')
