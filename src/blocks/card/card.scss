@@ -6,6 +6,9 @@
   border-radius: 6px;
   padding: 0 40px;
   margin: 10px;
+  transform: rotateY(90deg);
+  opacity: 0;
+  transition: all .5s ease;
   
   h2 {
     font-size: $font-size-h2;
@@ -13,5 +16,11 @@
     font-weight: 600;
     text-align: center;
     line-height: 220px;
+  }
+  
+  &.active {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: all .5s ease .3s;
   }
 }

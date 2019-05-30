@@ -121,7 +121,8 @@ const serve = () => {
     port: 8080,
     startPath: 'index.html',
     open: false,
-    notify: false
+    notify: false,
+    https: true
   });
 
   watch([`${config.pages}**/*.pug`], { events: ['change', 'add'], delay: 100 }, series(

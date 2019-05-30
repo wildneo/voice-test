@@ -12,6 +12,7 @@ body {
   color: $black;
 }
 .content {
+  perspective: 800px;
   height: 100vh;
   display: flex;
   justify-content: center;
